@@ -37,6 +37,10 @@ This algorithm is designed to prioritize short and I/O-bound (interactive) proce
 
 ```Priority Boost```: At regular intervals (specified by boosting_interval), all processes are moved back to the highest priority queue.
 
+``` # INTERACTIVE = 1``` 
+
+``` # CPU_INTENSIVE = 0``` 
+
 Round Robin and FCFS Scheduling: The scheduling within each queue depends on the queue's priority. The highest priority queues use a Round Robin scheduling algorithm (with time quantum specified by time_quantum[]), while the lowest priority queue uses FCFS scheduling.
 ### Lottery Scheduling
 #### Design
