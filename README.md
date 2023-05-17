@@ -24,6 +24,7 @@ This algorithm is designed to prioritize short and I/O-bound (interactive) proce
 ``` read_workload(string filename)  ``` Reads a list of processes from a file. Each process is represented by a line in the file, with the arrival time, duration, job type, process ID separated by spaces. The processes are added to a priority queue sorted by arrival time.
 
 ```mlfq function```: This function is the main implementation of the MLFQ scheduling algorithm. It takes a workload (a priority queue of processes), the number of queues, an array of time quanta for each queue, and a boosting interval as parameters. It returns a list of completed processes.
+
 ```workload```: A priority queue of processes sorted by their arrival time. Processes are removed from this queue and added to the MLFQ when their arrival time comes.
 
 ```num_queues```: The number of queues in the MLFQ. Each queue corresponds to a different priority level.
